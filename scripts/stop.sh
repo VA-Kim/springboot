@@ -2,7 +2,7 @@ ABSDIR=$(dirname $ABSPATH)
 
 source ${ABSDIR}/profile.sh
 
-IDLE_PORT=$(find_idle_prot)
+IDLE_PORT=$(find_idle_port)
 
 echo "> $IDLE_PORT 에서 구동 중인 어플리케이션 pid 확인"
 IDLE_PID=$(lsof -ti tcp:${IDLE_PORT})
